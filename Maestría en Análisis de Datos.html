@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sílabo del Curso: Maestría Análisis Datos: Python, SQL, ML y Power BI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header-bg {
+            background-color: #004d40; /* Un verde azulado oscuro y sofisticado */
+            color: #ffffff;
+        }
+        .text-accent-primary {
+            color: #004d40;
+        }
+        .text-accent-secondary {
+            color: #c59d5f; /* Un dorado elegante */
+        }
+        .border-accent {
+            border-color: #c59d5f;
+        }
+        .section-title {
+            color: #004d40;
+            border-bottom: 3px solid #c59d5f;
+            padding-bottom: 0.5rem;
+        }
+        .course-highlight {
+            background-color: #ffffff;
+            border-left: 5px solid #c59d5f;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .accordion-button {
+            transition: background-color 0.3s;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-button:hover {
+            background-color: #fafafa;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+        .accordion-item:last-child .accordion-button {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Encabezado del Curso -->
+    <header class="header-bg shadow-lg">
+        <div class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-3 leading-tight">Maestría Análisis Datos: Python, SQL, ML y Power BI</h1>
+            <p class="text-lg md:text-xl text-gray-200">Transforma Datos en Decisiones Clave con Herramientas Clave: De Cero a Experto Práctico.</p>
+            <div class="mt-4 text-sm text-gray-300 flex flex-wrap items-center gap-x-4 gap-y-2">
+                <span class="flex items-center"><i class="fas fa-user-circle mr-1"></i>Diseñado por un Estratega Analítico de IA</span>
+                <span class="flex items-center"><i class="fas fa-star text-yellow-300 mr-1"></i>Curso de Alto Rendimiento</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto p-6 md:p-8 mt-[-40px] relative">
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl">
+        
+            <!-- Lo que aprenderán -->
+            <div class="course-highlight p-6 mb-10 rounded-r-lg">
+                <h2 class="text-2xl font-bold mb-4 text-accent-primary">Lo que los estudiantes aprenderán</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Dominar SQL para la extracción y manipulación de grandes volúmenes de datos.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Desarrollar análisis avanzados en Python para descubrir insights de negocio ocultos.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Construir e interpretar modelos de Machine Learning (Clustering, Forecast, Reglas de Asociación).</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Crear dashboards interactivos y visualizaciones de alto impacto con Power BI.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Aplicar un marco de trabajo analítico completo, desde la recolección del dato hasta la presentación de resultados.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Comunicar hallazgos de forma efectiva para influir en las decisiones estratégicas del negocio.</span></li>
+                </ul>
+            </div>
+
+            <!-- Descripción del curso -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Descripción del curso</h2>
+                <div class="text-gray-700 space-y-4 prose max-w-none">
+                    <p>¿Listo para poner tus poderosas habilidades de análisis de datos a prueba? Este curso te proporciona una sólida base en <strong class="font-semibold text-gray-800">MySQL, Python, Power BI y Machine Learning</strong>, permitiéndote abordar desafíos reales del mundo empresarial. A través de un caso práctico de estudio integral, aprenderás a limpiar, transformar y visualizar datos, construir modelos predictivos y extraer insights valiosos que impulsan el crecimiento.</p>
+                    <p>Con un enfoque 100% práctico, el programa te guiará en un viaje que comienza con la extracción de datos brutos desde una base de datos SQL y culmina con la presentación de una estrategia de negocio a un CEO en un entorno simulado. No solo dominarás las herramientas técnicas, sino que desarrollarás una mentalidad analítica para pensar de manera crítica y resolver problemas complejos.</p>
+                    <p>Al finalizar, te convertirás en un perfil profesional altamente demandado, capaz de liderar la transformación digital en cualquier organización y convertir los datos en tu mayor aliado profesional.</p>
+                </div>
+            </section>
+
+            <!-- Contenido del Curso (Acordeón) -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Contenido del curso</h2>
+                <div class="border border-gray-200 rounded-lg bg-white shadow-sm overflow-hidden">
+
+                    <!-- Módulo 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 1: Convirtiéndolo en Business Intelligence</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-database text-accent-secondary mr-4"></i><span>Preparando la Extracción de Datos desde la Base de Datos con SQL</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-chart-pie text-accent-secondary mr-4"></i><span>Modelando y Transformando los Datos para el Análisis</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-tachometer-alt text-accent-secondary mr-4"></i><span>Creando la Visualización de Datos y Dashboards en Power BI</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-search-dollar text-accent-secondary mr-4"></i><span>Analizando los Resultados del Modelo de Business Intelligence</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 2: Viajando al Business Analytics</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-sitemap text-accent-primary mr-4"></i><span>Aplicando Analítica Avanzada en Python para Categorización ABC de Productos</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-chart-line text-accent-primary mr-4"></i><span>Análisis de Descomposición Estacional de Series Temporales</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-cogs text-accent-primary mr-4"></i><span>Transformando Datos en Información para el Business Analytics</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-lightbulb text-accent-primary mr-4"></i><span>Analizando los Resultados que Ofrece el Modelo de BA</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 3: Haciendo una Parada en Minería de Datos</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-project-diagram text-accent-primary mr-4"></i><span>Aplicando el Algoritmo Apriori para Encontrar Reglas de Asociación</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-shopping-basket text-accent-primary mr-4"></i><span>Modelando el Marco de Datos para el Análisis de Canasta de Mercado</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-bullhorn text-accent-primary mr-4"></i><span>Analizando los Resultados para Acciones de Marketing Cruzado</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 4: Machine Learning: Obtención de Pronósticos</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-brain text-accent-primary mr-4"></i><span>Preparando los Datos y la Serie Temporal para el Análisis</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-bullseye text-accent-primary mr-4"></i><span>Modelando con Regresión Lineal para un Forecast de Ventas en Python</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-chart-bar text-accent-primary mr-4"></i><span>Creando la Visualización de los Datos y el Pronóstico</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-clipboard-check text-accent-primary mr-4"></i><span>Analizando los Resultados que Ofrece el Dashboard de Forecast</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Módulo 5 -->
+                     <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 5: Machine Learning: Segmentando Clientes</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-users text-accent-primary mr-4"></i><span>Aplicando el Algoritmo K-Means para Segmentar Clientes en Python</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-object-group text-accent-primary mr-4"></i><span>Modelando el Marco de Datos para el Análisis de Clustering</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-paint-brush text-accent-primary mr-4"></i><span>Creando la Visualización de los Segmentos de Clientes</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-user-tag text-accent-primary mr-4"></i><span>Analizando los Resultados para Estrategias de Marketing Personalizado</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Módulo 6 -->
+                     <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 6: Machine Learning: Recomendando Productos</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-thumbs-up text-accent-primary mr-4"></i><span>Aplicando Filtrado Colaborativo para Recomendar Productos en Python</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-cogs text-accent-primary mr-4"></i><span>Modelando el Marco de Datos para el Sistema de Recomendación</span></li>
+                                <li class="p-4 pl-6 flex items-center text-gray-600"><i class="fas fa-gift text-accent-primary mr-4"></i><span>Analizando los Resultados para Aumentar el Valor del Cliente</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <!-- Requisitos -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Requisitos</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Curiosidad insaciable y ganas de resolver problemas.</li>
+                        <li>Pensamiento crítico para tomar decisiones informadas.</li>
+                        <li>Mentalidad abierta a nuevas herramientas y técnicas.</li>
+                        <li>No se requieren conocimientos previos de programación o Machine Learning.</li>
+                    </ul>
+                </section>
+
+                <!-- A quién va dirigido -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">¿Para quién es este curso?</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Profesionales que buscan reorientar su carrera hacia el análisis de datos.</li>
+                        <li>Analistas de negocio que quieren incorporar Python y ML a sus habilidades.</li>
+                        <li>Gerentes y líderes de equipo que necesitan tomar decisiones basadas en datos.</li>
+                        <li>Cualquier persona apasionada por la tecnología y la resolución de problemas.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Duración del Curso -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Duración del Curso</h2>
+                <div class="bg-gray-50 p-6 rounded-lg flex items-center">
+                    <i class="fas fa-clock text-accent-primary text-3xl mr-4"></i>
+                    <div>
+                        <p class="text-gray-700 font-semibold text-lg">40 horas de contenido práctico y aplicado.</p>
+                        <p class="text-gray-600">Distribuidas en sesiones teóricas, laboratorios de código y proyectos prácticos.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- Informes de Muestra -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Informes de Muestra</h2>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="text-gray-700 mb-6">Explora los dashboards interactivos que aprenderás a construir. Cada informe demuestra el nivel de análisis y visualización que alcanzarás en las distintas fases del curso.</p>
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNGY2MDVlOWUtMGUxZS00ZjZiLThhMmEtMzhhYmRlZWU3YTM0IiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Informe de Business Intelligence <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNmMwM2RmNzktMDJlYi00ZGFjLWJlYTktMTY2OWMwYmRkNzFlIiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Informe de Business Analytics <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiMzVjYTRiNjMtMzNlZi00M2EyLWIxOTgtMjBmMTg4YTQ1ODQwIiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Análisis de la Cesta de Compra <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiNGE3NjkwNjItYWQ5NC00ODVkLTg2ODktNmIwMDMxNTNkOTI0IiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Informe de Forecast <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiODc4YzAwYmUtOTMxYi00NzcyLWExMTktNmUyYjg1Mzc0Zjg4IiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Clustering de Clientes <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiYzU3MjYwNzYtNjU1My00Zjg0LWIwZGMtZTFlNTBiNTU1OTg3IiwidCI6Ijc1Y2Y2ZGEwLTdlMWEtNDk0Mi04Mjk1LWNlMzE2OTA3ZDdiMCJ9" target="_blank" class="text-accent-primary hover:underline font-semibold inline-flex items-center">
+                            Sistema de Recomendación <i class="fas fa-external-link-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Instructor -->
+            <section class="bg-gray-50 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 section-title">Instructor</h2>
+                <div>
+                    <h3 class="font-bold text-xl text-accent-primary">Pedro Alcalá</h3>
+                    <p class="text-sm text-gray-600 mb-3">Máster en Ciencia de Datos y Analítica Avanzada</p>
+                    <a href="https://www.udemy.com/user/pedro-alcala-2/" target="_blank" class="inline-block bg-yellow-500 text-gray-800 text-xs font-bold mb-3 px-3 py-1 rounded-full hover:bg-yellow-600 transition-colors">Partner oficial Udemy</a>
+                    <p class="text-gray-700">Este curso ha sido estructurado y diseñado por estrategas analíticos y expertos en ciencia de datos, utilizando metodologías de vanguardia para asegurar un aprendizaje relevante, práctico y alineado con las demandas del mercado actual. La pasión del equipo es capacitar a la próxima generación de profesionales para que aprovechen el poder de la analítica y transformen sus áreas de negocio.</p>
+                    <a href="https://www.linkedin.com/in/pedro-daniel-alcala-rojas/" target="_blank" class="text-accent-primary hover:underline font-semibold mt-3 inline-block">Perfil de LinkedIn &rarr;</a>
+                </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+    <footer class="text-center p-6 mt-10 header-bg">
+        <p class="text-gray-300">&copy; 2025 - Maestría Análisis Datos: Python, SQL, ML y Power BI</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                const icon = button.querySelector('i');
+
+                // Toggle visibility
+                if (accordionContent.style.maxHeight) {
+                    accordionContent.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    // Close all other accordions before opening the current one
+                    document.querySelectorAll('.accordion-content').forEach(content => {
+                        if (content !== accordionContent) {
+                            content.style.maxHeight = null;
+                            content.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                        }
+                    });
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

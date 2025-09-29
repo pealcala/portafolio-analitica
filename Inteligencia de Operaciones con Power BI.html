@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia de Operaciones con Power BI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #004d40 0%, #002d26 100%);
+            color: #ffffff;
+        }
+        .text-accent-primary {
+            color: #004d40;
+        }
+        .text-accent-secondary {
+            color: #c59d5f; /* Dorado elegante */
+        }
+        .section-title {
+            color: #004d40;
+            border-bottom: 3px solid #c59d5f;
+            padding-bottom: 0.5rem;
+        }
+        .course-highlight {
+            background-color: #ffffff;
+            border-left: 5px solid #c59d5f;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .accordion-button {
+            transition: background-color 0.3s;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-button:hover {
+            background-color: #fafafa;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+        .accordion-item:last-child .accordion-button {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Encabezado del Curso -->
+    <header class="header-bg shadow-lg">
+        <div class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-3 leading-tight">Inteligencia de Operaciones con Power BI</h1>
+            <p class="text-lg md:text-xl text-gray-200">Analítica para la Eficiencia Agroindustrial y Manufacturera: Mide, controla y optimiza tu producción.</p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto p-6 md:p-8 mt-[-40px] relative">
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl">
+        
+            <!-- Lo que aprenderás -->
+            <div class="course-highlight p-6 mb-10 rounded-r-lg">
+                <h2 class="text-2xl font-bold mb-4 text-accent-primary">Lo que aprenderás en este curso</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Identificar y definir los KPIs críticos para operaciones de manufactura (OEE) y agroindustria (Rendimiento/Ha).</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Conectar y modelar datos de fuentes operativas diversas (planillas de producción, ERPs, registros de maquinaria).</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Calcular métricas complejas de eficiencia, costos, mermas y calidad utilizando fórmulas DAX avanzadas.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Construir un Tablero de Control Operativo interactivo para monitorear la salud de la producción en tiempo real.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Analizar las causas raíz de las ineficiencias y presentar hallazgos para impulsar la mejora continua.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Vincular los datos operativos con los resultados financieros para demostrar el impacto en la rentabilidad del negocio.</span></li>
+                </ul>
+            </div>
+
+            <!-- Descripción del curso -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Descripción del curso</h2>
+                <div class="text-gray-700 space-y-4 prose max-w-none">
+                    <p>En el corazón productivo de la región, la eficiencia no es una opción, es la clave para la supervivencia y el crecimiento. Para los líderes de la agroindustria y la manufactura, la pregunta es siempre la misma: ¿Cómo podemos producir más, a menor costo y con mayor calidad? La respuesta está oculta en los datos que sus operaciones generan cada segundo. Este curso está diseñado para desvelar esas respuestas.</p>
+                    <p><strong class="font-semibold text-gray-800">'Inteligencia de Operaciones'</strong> es una inmersión práctica y especializada que te enseñará a usar Power BI no como una herramienta de reporte, sino como un sistema nervioso central para tu planta de producción o tu explotación agrícola. Dejaremos de lado los análisis genéricos para centrarnos en los KPIs que realmente importan en tu sector: desde el OEE (Overall Equipment Effectiveness) en una línea de montaje hasta el rendimiento por hectárea y el costo de insumos en el campo.</p>
+                    <p>A través de un caso de estudio práctico e integral, aprenderás a conectar datos caóticos de planillas de control, sistemas ERP y registros de maquinaria para construir un modelo de datos robusto. Dominarás el lenguaje DAX para calcular métricas que exponen ineficiencias, sobrecostos y oportunidades de mejora. Finalmente, construirás un dashboard de control operativo que no solo te dirá 'qué pasó', sino que te ayudará a entender 'por qué pasó' y 'qué hacer al respecto'. Al finalizar, serás capaz de transformar datos operativos en una ventaja competitiva tangible, hablando el lenguaje de la eficiencia y la rentabilidad.</p>
+                </div>
+            </section>
+
+            <!-- Contenido del Curso (Acordeón) -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Contenido del curso</h2>
+                <div class="border border-gray-200 rounded-lg bg-white shadow-sm overflow-hidden" id="accordion-container">
+
+                    <!-- Módulo 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 1: Fundamentos Estratégicos de la Operación</span><i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-industry text-accent-secondary mr-4 mt-1"></i><span>El Rol del Análisis de Datos en la Optimización de la Producción.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-ruler-combined text-accent-secondary mr-4 mt-1"></i><span>KPIs Clave en Manufactura: Desglosando el OEE (Disponibilidad, Rendimiento, Calidad).</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-tractor text-accent-secondary mr-4 mt-1"></i><span>KPIs Clave en Agroindustria: Rendimiento, Costo por Hectárea/Tonelada, Eficiencia de Insumos.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-map-signs text-accent-secondary mr-4 mt-1"></i><span>Definición del Caso Práctico: Desafíos de una empresa manufacturera/agroindustrial.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 2: La Cocina de los Datos Operativos (ETL)</span><i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-file-excel text-accent-primary mr-4 mt-1"></i><span>Conexión a Fuentes Típicas: Extracción de datos desde planillas de control de producción (Excel/CSV).</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-database text-accent-primary mr-4 mt-1"></i><span>Integración con Sistemas ERP: Conexión a datos de inventario y órdenes de producción (SQL).</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-cogs text-accent-primary mr-4 mt-1"></i><span>Limpieza y Transformación: Estandarización de turnos, fechas, códigos de producto y motivos de parada.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-project-diagram text-accent-primary mr-4 mt-1"></i><span>Construcción del Modelo de Datos: Creación de tablas de hechos (producción) y dimensiones (productos, máquinas, tiempo).</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 3: Creando Inteligencia Operativa con DAX</span><i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-calculator text-accent-primary mr-4 mt-1"></i><span>Cálculo de Componentes del OEE: Medidas DAX para Disponibilidad, Rendimiento y Calidad.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-dollar-sign text-accent-primary mr-4 mt-1"></i><span>Análisis de Costos y Mermas: Fórmulas para cuantificar el impacto económico de las ineficiencias.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-chart-pie text-accent-primary mr-4 mt-1"></i><span>Análisis de Causa Raíz: Uso de CALCULATE y FILTER para aislar problemas por máquina, turno o producto.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-calendar-alt text-accent-primary mr-4 mt-1"></i><span>Inteligencia de Tiempo para Operaciones: Comparativas de producción (Día vs Día, Semana vs Semana).</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Módulo 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 4: Visualización y Storytelling para la Planta</span><i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-tachometer-alt text-accent-primary mr-4 mt-1"></i><span>Diseño del Tablero de Control Operativo: Claridad, jerarquía y foco en la acción.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-chart-bar text-accent-primary mr-4 mt-1"></i><span>Visualizaciones Esenciales: Gráficos de Pareto para motivos de parada, medidores para OEE, tendencias de producción.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-mouse-pointer text-accent-primary mr-4 mt-1"></i><span>Creación de un Dashboard Interactivo: Filtros por fecha, turno, línea de producción y máquina.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-presentation text-accent-primary mr-4 mt-1"></i><span>Storytelling con Datos Operativos: Cómo comunicar un problema y su solución a la gerencia.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- Módulo 5 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Módulo 5: De la Inteligencia a la Acción y Rentabilidad</span><i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="divide-y divide-gray-100 bg-gray-50">
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-cloud-upload-alt text-accent-primary mr-4 mt-1"></i><span>Despliegue y Automatización: Publicar el informe y configurar la actualización automática de datos.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-search-dollar text-accent-primary mr-4 mt-1"></i><span>Análisis de Escenarios: Simular el impacto de mejoras de eficiencia en los costos.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-file-invoice-dollar text-accent-primary mr-4 mt-1"></i><span>Conectando Operaciones y Finanzas: Demostrando cómo una mejora en el OEE impacta el estado de resultados.</span></li>
+                                <li class="p-4 pl-6 flex items-start text-gray-600"><i class="fas fa-lightbulb text-accent-primary mr-4 mt-1"></i><span>Presentación Final: Role-playing de presentación de hallazgos y plan de acción a la dirección.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+           
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <!-- Requisitos -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Requisitos</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>PC o laptop con sistema operativo Windows.</li>
+                        <li>Conocimientos básicos de Microsoft Excel (tablas, fórmulas simples).</li>
+                        <li>No se requieren conocimientos previos de Power BI ni de programación.</li>
+                        <li>Es muy recomendable (aunque no excluyente) tener experiencia o interés en entornos de producción o agroindustria.</li>
+                    </ul>
+                </section>
+
+                <!-- A quién va dirigido -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">¿Para quién es este curso?</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Jefes de Planta, Gerentes de Producción y Supervisores.</li>
+                        <li>Ingenieros de Procesos, Industriales y de Mejora Continua.</li>
+                        <li>Profesionales y Analistas del sector Agroindustrial.</li>
+                        <li>Analistas de Datos que deseen especializarse en Operaciones.</li>
+                        <li>Controllers Financieros que necesiten analizar costos de producción.</li>
+                    </ul>
+                </section>
+            </div>
+            <!-- Duración del Curso -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Duración del Curso</h2>
+                <div class="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <i class="fas fa-clock text-accent-primary fa-2x mr-4"></i>
+                    <div>
+                        <p class="text-xl font-bold text-gray-800">30 Horas de Inmersión Total</p>
+                        <p class="text-gray-600">Diseñado para un aprendizaje profundo que combina teoría estratégica con aplicación práctica intensiva.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Instructor -->
+            <section class="bg-gray-50 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 section-title">Instructor</h2>
+                <div>
+                    <h3 class="font-bold text-xl text-accent-primary">Pedro Alcalá</h3>
+                    <p class="text-sm text-gray-600 mb-3">Máster en Ciencia de Datos y Analítica Avanzada</p>
+                    <a href="https://www.udemy.com/user/pedro-alcala-2/" target="_blank" class="inline-block bg-yellow-500 text-gray-800 text-xs font-bold mb-3 px-3 py-1 rounded-full hover:bg-yellow-600 transition-colors">Partner oficial Udemy</a>
+                    <p class="text-gray-700">Con una vasta experiencia como consultor, Pedro se especializa en traducir los complejos desafíos operativos en soluciones de datos claras y rentables. Su enfoque práctico asegura que cada lección esté anclada en la realidad del negocio, capacitando a los profesionales para generar un impacto medible en la eficiencia y los resultados de su empresa.</p>
+                    <a href="https://www.linkedin.com/in/pedro-daniel-alcala-rojas/" target="_blank" class="text-accent-primary hover:underline font-semibold mt-3 inline-block">Perfil de LinkedIn &rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="text-center p-6 mt-10 header-bg">
+        <p class="text-gray-300">&copy; 2025 - Curso de Inteligencia de Operaciones con Power BI</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    const icon = button.querySelector('i');
+                    const isOpen = content.style.maxHeight;
+                    
+                    // Close all accordions
+                    document.querySelectorAll('.accordion-content').forEach(c => c.style.maxHeight = null);
+                    document.querySelectorAll('.accordion-button i').forEach(i => i.classList.remove('rotate-180'));
+
+                    // Open the clicked one if it was closed
+                    if (!isOpen) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

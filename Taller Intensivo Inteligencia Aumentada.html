@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller: Inteligencia Aumentada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .header-bg {
+            background-color: #004d40; /* Verde azulado oscuro y sofisticado */
+            color: #ffffff;
+        }
+        .text-accent-primary {
+            color: #004d40;
+        }
+        .text-accent-secondary {
+            color: #c59d5f; /* Un dorado elegante */
+        }
+        .border-accent {
+            border-color: #c59d5f;
+        }
+        .section-title {
+            color: #004d40;
+            border-bottom: 3px solid #c59d5f;
+            padding-bottom: 0.5rem;
+        }
+        .course-highlight {
+            background-color: #ffffff;
+            border-left: 5px solid #c59d5f;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .accordion-button {
+            transition: background-color 0.3s;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .accordion-button:hover {
+            background-color: #f5f5f5;
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-in-out;
+        }
+        .accordion-item:last-child .accordion-button {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Encabezado del Taller -->
+    <header class="header-bg shadow-lg">
+        <div class="max-w-5xl mx-auto px-6 py-12 md:py-16">
+            <h1 class="text-3xl md:text-5xl font-extrabold mb-3 leading-tight">Inteligencia Aumentada: De Analista a Estratega con IA</h1>
+            <p class="text-lg md:text-xl text-gray-200">Domina el pensamiento crítico, la analítica de negocios y la gestión del cambio con IA como tu copiloto estratégico.</p>
+            <div class="mt-4 text-sm text-gray-300 flex flex-wrap items-center gap-x-4 gap-y-2">
+                <a href="https://www.linkedin.com/in/pedro-daniel-alcala-rojas/" target="_blank" class="hover:text-white transition"><span><i class="fas fa-user-circle mr-1"></i>Creado por Pedro Alcalá</span></a>
+                <span class="flex items-center"><i class="fas fa-star text-yellow-300 mr-1"></i>Taller Intensivo de Alto Impacto</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto p-6 md:p-8 mt-[-40px] relative">
+        <div class="bg-white p-6 md:p-8 rounded-lg shadow-xl">
+        
+            <!-- Lo que aprenderás -->
+            <div class="course-highlight p-6 mb-10 rounded-r-lg">
+                <h2 class="text-2xl font-bold mb-4 text-accent-primary">¿Qué aprenderán los estudiantes en el curso?</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Aplicar pensamiento crítico para analizar problemas de negocio complejos.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Construir prompts efectivos para instruir a modelos de IA.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Transformar datos crudos en inteligencia de negocios accionable.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Diseñar y presentar un caso de negocio completo asistido por IA.</span></li>
+                    <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Aplicar modelos de gestión del cambio para liderar la adopción de IA.</span></li>
+                     <li class="flex items-start"><i class="fas fa-check-circle text-accent-secondary mr-3 mt-1"></i><span>Evaluar la información generada por IA con escepticismo profesional.</span></li>
+                </ul>
+            </div>
+
+            <!-- Descripción del curso -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Descripción del curso</h2>
+                <div class="text-gray-700 space-y-4 prose max-w-none">
+                    <p>¿Sientes que el volumen de datos crece exponencialmente, pero tu capacidad para generar valor estratégico se estanca en tareas operativas? ¿Te preguntas cómo pasar de ser un profesional que reporta el pasado a uno que moldea el futuro de la organización? La respuesta no está en trabajar más duro, sino en trabajar de forma más inteligente, fusionando lo mejor de la inteligencia humana con el poder de la Inteligencia Artificial Generativa.</p>
+                    <p><strong class="font-semibold text-gray-800">Este no es otro curso sobre IA; es un taller intensivo de transformación</strong> diseñado para forjar una nueva generación de líderes: los <strong class="font-semibold text-gray-800">Estrategas Aumentados</strong>. Olvídate de aprender a usar una herramienta de forma aislada. Aquí, te embarcarás en un viaje práctico y colaborativo que comienza fortaleciendo tu activo más valioso —tu mente— y culmina con la maestría de usar la IA (Gemini, Copilot, ChatGPT) como un verdadero copiloto para analizar, decidir, comunicar y liderar.</p>
+                    <p>A lo largo de 20 horas de inmersión total, aprenderás a desmontar problemas complejos con pensamiento crítico, a transformar datos en inteligencia de negocios accionable, y a liderar la adopción de nuevas tecnologías gestionando el cambio de manera eficaz. Al finalizar, no serás alguien que "sabe de IA". Serás un estratega que piensa críticamente, analiza profundamente y lidera con confianza, utilizando la IA para amplificar tu impacto y convertirte en un activo invaluable para tu organización.</p>
+                </div>
+            </section>
+
+            <!-- Contenido del Curso (Acordeón) -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 section-title">Contenido Detallado del Curso</h2>
+                <div class="border border-gray-200 rounded-lg bg-white shadow-sm overflow-hidden">
+
+                    <!-- Sesión 1 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Sesión 1: LA MENTE DEL ESTRATEGA</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-5 bg-gray-50 border-t border-gray-200">
+                                <p class="font-semibold text-gray-700 mb-3">Foco: Establecer las bases del pensamiento crítico y la mentalidad de crecimiento como el "sistema operativo" humano que la IA potenciará.</p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li><span class="font-semibold">Bienvenida y Mapeo de Expectativas:</span> Presentación y establecimiento del "contrato de aprendizaje".</li>
+                                    <li><span class="font-semibold">Módulo 1: Mentalidad y Aprendizaje Continuo:</span> Lección interactiva sobre Mentalidad Fija vs. Crecimiento.</li>
+                                    <li><span class="font-semibold">Taller Grupal 1: "Re-encuadrando Desafíos":</span> Los participantes reformulan un desafío profesional real.</li>
+                                    <li><span class="font-semibold">Módulo 2: El Kit del Pensamiento Crítico:</span> Reconocimiento de sesgos y falacias lógicas en contextos de negocio.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sesión 2 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Sesión 2: EL COPILOTO DE IA</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                             <div class="p-5 bg-gray-50 border-t border-gray-200">
+                                <p class="font-semibold text-gray-700 mb-3">Foco: Desmitificar la IA Generativa y dominar la habilidad fundamental para interactuar con ella: el Prompt Engineering.</p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li><span class="font-semibold">Módulo 3: Fundamentos de la IA Generativa:</span> Lección sobre qué es la IA para negocios, herramientas y ética.</li>
+                                    <li><span class="font-semibold">Lección Práctica: El Arte del Prompt Engineering:</span> Presentación del método R-C-T-F (Rol, Contexto, Tarea, Formato).</li>
+                                    <li><span class="font-semibold">Laboratorio de Prompts (Hands-On):</span> Construcción y refinamiento de prompts para mini-casos prácticos.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sesión 3 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Sesión 3: PRÁCTICA AUMENTADA - BUSINESS INTELLIGENCE</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-5 bg-gray-50 border-t border-gray-200">
+                                <p class="font-semibold text-gray-700 mb-3">Foco: Aplicar las habilidades de prompting para revolucionar el flujo de trabajo de análisis de negocio.</p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li><span class="font-semibold">Módulo 4 (Parte A): BI y Reporting Aumentado:</span> Demo "Del Excel al Análisis en 90 Segundos".</li>
+                                    <li><span class="font-semibold">Taller Práctico: "Reunión de Comité Urgente":</span> Preparación de un análisis completo con IA.</li>
+                                    <li><span class="font-semibold">Módulo 4 (Parte B): KPIs y Storytelling con Datos:</span> Usar IA para definir KPIs y sugerir visualizaciones.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sesión 4 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Sesión 4: PRÁCTICA AUMENTADA - ESTRATEGIA Y LIDERAZGO</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-5 bg-gray-50 border-t border-gray-200">
+                                <p class="font-semibold text-gray-700 mb-3">Foco: Elevar el uso de la IA de tareas analíticas a actividades estratégicas y de gestión del cambio.</p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li><span class="font-semibold">Módulo 5: Forecasting y Análisis de Riesgos:</span> Demo de pronósticos y consultoría de riesgos con IA.</li>
+                                    <li><span class="font-semibold">Módulo 6: Liderando la Adopción de la IA:</span> Lección sobre modelos de cambio (Kotter, ADKAR).</li>
+                                    <li><span class="font-semibold">Taller de Role-Playing: "El Pitch al Escéptico":</span> Presentación de una iniciativa de IA a un "CFO escéptico".</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sesión 5 -->
+                    <div class="accordion-item">
+                        <button class="accordion-button w-full text-left p-5 font-bold text-gray-800 flex justify-between items-center">
+                            <span>Sesión 5: LIDERAZGO TRANSFORMADOR Y PROYECTO FINAL</span>
+                            <i class="fas fa-chevron-down transform transition-transform duration-300"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="p-5 bg-gray-50 border-t border-gray-200">
+                                <p class="font-semibold text-gray-700 mb-3">Foco: Consolidar todo el aprendizaje en un proyecto final aplicado y definir los próximos pasos.</p>
+                                <ul class="list-disc list-inside space-y-2 text-gray-600">
+                                    <li><span class="font-semibold">Módulo 7: Anclando una Cultura de Datos y Midiendo el ROI:</span> Lección sobre diseño de cuadros de mando.</li>
+                                    <li><span class="font-semibold">Taller Final:</span> Resolución de un caso de negocio completo en grupos.</li>
+                                    <li><span class="font-semibold">Presentaciones Finales y Feedback:</span> Cada grupo presenta su "Informe Estratégico de IA".</li>
+                                    <li><span class="font-semibold">Cierre del Taller:</span> Resumen final y desarrollo de un plan de acción personal.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <!-- Requisitos -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Requisitos</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Experiencia profesional en un entorno laboral.</li>
+                        <li>Familiaridad con software de oficina básico.</li>
+                        <li>Computadora con conexión estable a internet.</li>
+                        <li>Actitud abierta y participativa.</li>
+                    </ul>
+                </section>
+
+                <!-- A quién va dirigido -->
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">¿A quién está dirigido?</h2>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Analistas de Datos y Profesionales de BI.</li>
+                        <li>Gerentes, Jefes de Equipo y Directores.</li>
+                        <li>Profesionales de Finanzas, Contabilidad y Operaciones.</li>
+                        <li>Consultores y Gerentes de Proyecto.</li>
+                    </ul>
+                </section>
+            </div>
+            
+            <!-- Duración y Nivel -->
+             <div class="grid md:grid-cols-2 gap-8 mb-10">
+                <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Duración del Taller</h2>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-clock text-accent-primary fa-2x mr-4"></i>
+                        <div>
+                            <p class="text-xl font-bold text-gray-800">20 Horas</p>
+                            <p class="text-gray-600">Aprendizaje intensivo, práctico y colaborativo.</p>
+                        </div>
+                    </div>
+                </section>
+                 <section>
+                    <h2 class="text-2xl font-bold mb-6 section-title">Nivel del Curso</h2>
+                    <div class="flex items-center bg-gray-50 p-4 rounded-lg shadow-sm">
+                        <i class="fas fa-layer-group text-accent-primary fa-2x mr-4"></i>
+                        <div>
+                            <p class="text-xl font-bold text-gray-800">Intermedio</p>
+                            <p class="text-gray-600">Diseñado para profesionales con experiencia laboral.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- Instructor -->
+            <section class="bg-gray-50 p-6 rounded-lg">
+                <h2 class="text-2xl font-bold mb-4 section-title">Instructor</h2>
+                <div>
+                    <h3 class="font-bold text-xl text-accent-primary">Pedro Alcalá</h3>
+                    <p class="text-sm text-gray-600 mb-3">Máster en Ciencia de Datos y Analítica Avanzada</p>
+                    <a href="https://www.udemy.com/user/pedro-alcala-2/" target="_blank" class="inline-block bg-yellow-500 text-gray-800 text-xs font-bold mb-3 px-3 py-1 rounded-full hover:bg-yellow-600 transition-colors">Partner oficial Udemy</a>
+                    <p class="text-gray-700">Con una sólida formación que abarca desde la informática hasta la ciencia de datos, y una amplia experiencia como consultor en analítica empresarial y docente, Pedro se especializa en hacer que los datos complejos sean comprensibles y accionables. Su pasión es capacitar a profesionales para que aprovechen el poder de la analítica y transformen sus áreas de negocio.</p>
+                    <a href="https://www.linkedin.com/in/pedro-daniel-alcala-rojas/" target="_blank" class="text-accent-primary hover:underline font-semibold mt-3 inline-block">Perfil de LinkedIn &rarr;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="text-center p-6 mt-10 header-bg">
+        <p class="text-gray-300">&copy; 2025 - Taller Intensivo de Inteligencia Aumentada</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.accordion-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const accordionContent = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                const isOpen = accordionContent.style.maxHeight;
+
+                // Close all accordions first
+                document.querySelectorAll('.accordion-content').forEach(content => {
+                    content.style.maxHeight = null;
+                    content.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+                });
+                
+                // If it wasn't open, open it
+                if (!isOpen) {
+                    accordionContent.style.maxHeight = accordionContent.scrollHeight + "px";
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
